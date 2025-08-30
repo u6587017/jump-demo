@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../components/navbar';
 import missionImage from '../assets/farmer_happy.png';

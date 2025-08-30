@@ -1,10 +1,5 @@
-import React from 'react';
 import Navbar from '../components/navbar';
-import applicant_1 from '../assets/applicant_1.png';
-import applicant_2 from '../assets/applicant_2.png';
-import applicant_3 from '../assets/applicant_3.png';
-import applicant_4 from '../assets/applicant_4.png';
-import applicant_5 from '../assets/applicant_5.png';
+
 
 // --- Mock Data for Applicants ---
 const applicants = [

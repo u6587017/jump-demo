@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion'; // เพิ่มการ import framer-motion
 import { Link } from "react-router"; 
 import home_graphic from '../assets/home_graphic.png';
