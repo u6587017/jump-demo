@@ -72,7 +72,7 @@ function Register() {
                                 <textarea
                                     id="job-description"
                                     name="job-description"
-                                    rows="6"
+                                    rows={6}
                                     placeholder="อธิบายหน้าที่ความรับผิดชอบ, คุณสมบัติที่ต้องการ, และเวลาทำงาน"
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
                                 ></textarea>
