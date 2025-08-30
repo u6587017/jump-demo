@@ -5,7 +5,7 @@ import js from '../assets/js.png';
 import pkp from '../assets/pkp.png';
 import pw from '../assets/pw.png';
 import tj from '../assets/tj.png';
-
+import ppete from '../assets/ppete.png';
 
 // --- ภาพ Mockup (คุณสามารถเปลี่ยนเป็นภาพจริงได้) ---
 // ภาพ Hero ควรเป็นภาพที่แสดงถึงความหลากหลายและพลังของคนทำงาน
@@ -146,7 +146,7 @@ function AboutUsPage() {
                             </motion.div>
                             {/* Team Member 5 */}
                             <motion.div variants={itemVariants} className="bg-green-50 p-8 rounded-2xl shadow-md flex flex-col items-center h-full">
-                                <img src={tj} alt="Team Member 4" className="w-32 h-32 rounded-full mb-4 object-cover ring-4 ring-green-200 flex-shrink-0"/>
+                                <img src={ppete} alt="Team Member 4" className="w-32 h-32 rounded-full mb-4 object-cover ring-4 ring-green-200 flex-shrink-0"/>
                                 <div className="flex flex-col flex-grow">
                                     <h3 className="text-xl font-bold text-green-800">สหัสวรรษ นิจพันธ์</h3>
                                     <p className="text-gray-600 mt-2 text-sm">คณะเทคโนโลยีสารสนเทศและการสื่อสาร สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร(นานาชาติ) ชั้นปีที่ 3 มหาวิทยาลัยมหิดล</p>
