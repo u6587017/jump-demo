@@ -1,3 +1,4 @@
+import { m } from 'framer-motion';
 import Navbar from '../components/navbar';
 
 
@@ -8,35 +9,40 @@ const applicants = [
     name: 'คุณสมหญิง เก่งกาจ',
     role: 'ช่างฝีมือประดิษฐ์',
     experience: 'มีประสบการณ์ทำงานฝีมือกว่า 20 ปี เชี่ยวชาญด้านการเย็บปักถักร้อยและงานไม้ มีความละเอียดและใจเย็น',
-    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=SY'
+    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=SY',
+    matchScore: 96
   },
   {
     id: 2,
     name: 'คุณสมชาย ใจเย็น',
     role: 'พนักงานดูแลผู้สูงอายุ',
     experience: 'อดีตพยาบาล มีใจรักบริการและเข้าใจผู้สูงอายุเป็นอย่างดี สามารถช่วยเหลือกิจวัตรประจำวันและพูดคุยเป็นเพื่อนได้',
-    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=SC'
+    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=SC',
+    matchScore: 75
   },
   {
     id: 3,
     name: 'คุณมานะ อดทน',
     role: 'พนักงานคีย์ข้อมูล',
     experience: 'มีความสามารถในการพิมพ์ดีดอย่างรวดเร็วและแม่นยำ สามารถใช้โปรแกรม Microsoft Office ได้เป็นอย่างดี',
-    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=MN'
+    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=MN',
+    matchScore: 88
   },
    {
     id: 4,
     name: 'คุณปราณี มีสุข',
     role: 'บาริสต้า',
     experience: 'รักในการชงกาแฟและพบปะผู้คน มีมนุษยสัมพันธ์ดีเยี่ยมและเรียนรู้สูตรใหม่ๆ ได้อย่างรวดเร็ว',
-    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=PR'
+    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=PR',
+    matchScore: 72
   },
    {
     id: 5,
     name: 'คุณวิชัย แข็งแรง',
     role: 'พนักงานจัดเรียงสินค้า',
     experience: 'แม้จะใช้รถเข็น แต่มีความแข็งแรงและจัดเรียงสินค้าได้อย่างเป็นระเบียบ มีความรับผิดชอบต่องานสูง',
-    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=WC'
+    imageUrl: 'https://placehold.co/128x128/d1fae5/166534?text=WC',
+    matchScore: 80
   }
 ];
 
@@ -76,13 +82,22 @@ function ApplicantTrackingPage() {
                             </div>
                             
                             {/* Action Buttons */}
-                            <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-0 flex-shrink-0">
-                                <button className="bg-green-500 text-white font-bold py-2 px-5 rounded-lg hover:bg-green-600 transition-colors duration-300 w-full sm:w-auto">
-                                    ดูโปรไฟล์
-                                </button>
-                                <button className="bg-gray-200 text-gray-700 font-bold py-2 px-5 rounded-lg hover:bg-gray-300 transition-colors duration-300 w-full sm:w-auto">
-                                    ติดต่อ
-                                </button>
+
+                            <div className='w-full'>
+                                <div className="text-center mb-2">
+                                    <span className="text-sm text-gray-500">ตรงกับคุณสมบัติที่ต้องการ:</span>
+                                    <span className={`ml-2 font-bold ${applicant.matchScore >= 80 ? 'text-green-600' : applicant.matchScore >= 70 ? 'text-yellow-600' : 'text-red-600'}`}>
+                                        {applicant.matchScore}%
+                                    </span>
+                                    </div>
+                                <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-0 flex-shrink-0">
+                                    <button className="bg-green-500 text-white font-bold py-2 px-5 rounded-lg hover:bg-green-600 transition-colors duration-300 w-full ">
+                                        ดูโปรไฟล์
+                                    </button>
+                                    <button className="bg-gray-200 text-gray-700 font-bold py-2 px-5 rounded-lg hover:bg-gray-300 transition-colors duration-300 w-full ">
+                                        ติดต่อ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     ))}
