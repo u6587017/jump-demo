@@ -5,7 +5,7 @@ import js from '../assets/js.png';
 import pkp from '../assets/pkp.png';
 import pw from '../assets/pw.png';
 import tj from '../assets/tj.png';
-import ppete from '../assets/ppete.png';
+import ppete from '../assets/PPete.png';
 
 // --- ภาพ Mockup (คุณสามารถเปลี่ยนเป็นภาพจริงได้) ---
 // ภาพ Hero ควรเป็นภาพที่แสดงถึงความหลากหลายและพลังของคนทำงาน
